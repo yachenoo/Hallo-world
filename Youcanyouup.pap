@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="E2A809F8A36E3B9E">
-  <PROJECT FORMAT="1.00" NAME="Youcanyouup" AUTHOR="chen" CREATED="2018.11.09 10:59:52" MODIFIED="2018.11.09 11:53:24">
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="A98856EFD88F2383">
+  <PROJECT FORMAT="1.00" NAME="Youcanyouup" AUTHOR="chen" CREATED="2018.11.09 10:59:52" MODIFIED="2018.11.09 14:18:15">
     <DIAGRAMS>
       <DIAGRAM FORMAT="1.00" ID="0" NAME="Main flow 1" CREATED="2018.11.09 11:00:29" MODIFIED="2018.11.09 11:09:34">
         <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="9">
@@ -88,28 +88,109 @@
           <CONNECTION FORMAT="1.00" ID="36" FROM="35" TO="2" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
-      <DIAGRAM FORMAT="1.00" ID="1" NAME="main loop" CREATED="2018.11.09 11:09:46" MODIFIED="2018.11.09 11:09:46">
-        <LAYOUT FORMAT="1.00" COLUMNS="1" ROWS="3">
+      <DIAGRAM FORMAT="1.00" ID="1" NAME="main loop" CREATED="2018.11.09 11:09:46" MODIFIED="2018.11.09 14:18:15">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="10">
           <ENTRIES>
-            <ENTRY COLUMN="0" ROW="0" ANCHOR="True">
+            <ENTRY COLUMN="0" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="34">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="37">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
               <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
                 <TEXT><![CDATA[main loop]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="1">
+            <ENTRY COLUMN="1" ROW="1">
               <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
                 <TEXT><![CDATA[Start]]></TEXT>
               </FIGURE>
             </ENTRY>
-            <ENTRY COLUMN="0" ROW="2">
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[new?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Add new phrase]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="39">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[skip?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="6">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[to next phrase]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="25">
+                <TEXT><![CDATA[learn current phrase]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[end?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
               <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
                 <TEXT><![CDATA[End]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="2">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="14">
+                <TEXT><![CDATA[]]></TEXT>
               </FIGURE>
             </ENTRY>
           </ENTRIES>
         </LAYOUT>
         <CONNECTIONS>
-          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="40" FROM="39" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="11" FROM="10" TO="25" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="12" TO="2" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="15" FROM="12" TO="14" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="24" FROM="22" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="14" TO="22" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="26" FROM="25" TO="12" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="28" FROM="8" TO="27" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="33" FROM="31" TO="25" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="27" TO="31" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="35" FROM="4" TO="34" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="36" FROM="34" TO="37" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="41" FROM="37" TO="39" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="39" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
     </DIAGRAMS>
