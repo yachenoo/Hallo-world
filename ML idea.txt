@@ -1,0 +1,26 @@
+
+1. Comparing voice(TBD) score and repeating times used to adjust the timer array.
+2. app on time should also be recorded and used for ML.
+3. Alarm on to start course. Snooze or skip course. 
+4. May use GG translator to start satz(TBD). Or record someone.
+5. top 10 need to learn in your land.
+6. or you need to remember.
+7. You can you up, no can no BB:)
+8. None/less text/help/explaination. Easy to use/begin
+9. free and clean/simple/fast/small (topics)
+10. Test it myself for D.
+11. Alarm show how many phrases are waiting to remember.
+12. Auto/smart detection on/off for time schedule. Or manually setting(against all topics?)
+13. data structure:
+id                  uint
+text comment        char[]
+pic comment         link
+voicetrack          link
+repeated times      uint
+next uptime         time
+active next time    bool
+chance to lose      uint  0~5
+last score          0~100
+best score          0~100
+
+
